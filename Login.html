@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>HIS系统</title>
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="./js/login.js" ></script>
+</head>
+<body>
+	<div class="top">
+        <ul>
+        	<li class="li_index"><a>HIS系统</a></li>
+            <li class="li" id="fir">
+            	<a href="javascript:void(0)" class="lbtn">挂号</a>
+            	<ul class="sec">
+                    <li><a href="javascript:void(0)" class="lbtn">选择科室</a></li>
+                    <li><a href="javascript:void(0)" class="lbtn">选择医生</a></li>
+                </ul>
+            </li>
+            <li class="li"><a href="javascript:void(0)" class="lbtn">查看病例</a></li>
+            <li class="li_but"><a href="./Login.html" >登录</a></li>
+        </ul>
+	</div>
+	<div class="login">
+		<img src="./img/logo.png">
+		<br>
+		<div class="div_bg">
+			<p>
+				<a>WEAK PASSWORD</a>
+			</p>
+		</div>
+		<div class="div_inp">
+			<a><img src="./img/usr.png"><input type="text" name="usr"  placeholder="UserName" id="usr"></a>
+			<br>
+			<a><img src="./img/psw.png"><input type="password" name="psw" placeholder="PassWord" id="psw"></a>
+		</div>
+		<div class="div_btn">
+			<div class="reg"><a href="./Register.html">REGISTER</a></div>
+			<div class="log"><a href="javascript:void(0)" id="rbtn">LOGIN</a></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>HIS系统</title>
+	<link rel="stylesheet" type="text/css" href="./css/prescription.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="./js/prescription.js" ></script>
+</head>
+<body>
+	<div class="top">
+        <ul>
+        	<li class="li_index"><a>HIS系统</a></li>
+            <li class="li" id="fir">
+            	<a href="javascript:void(0)" class="rbtn">挂号</a>
+            	<ul class="sec">
+                    <li><a href="javascript:void(0)" class="rbtn">选择科室</a></li>
+                    <li><a href="javascript:void(0)" class="rbtn">选择医生</a></li>
+                </ul>
+            </li>
+            <li class="li"><a href="javascript:void(0)" class="lbtn">查看病例</a></li>
+            <li class="li_but"><a href="./Login.html" >注销</a></li>
+        </ul>
+	</div>
+	<div class="pres">
+		<span id="title">药方</span>
+        <hr>
+        <span id="s1">病名:</span>
+        <span id="s2">主治医生:</span>
+        <p>
+            <span id="s3">配药内容:</span>
+        </p>
+        <div id="content">
+            
+        </div>
+	</div>
+</body>
+
+<!-- jsonp解决跨域问题 动态script标签 -->
+<script src="./json/prescription.json?cb=get_data"></script>
+</html>

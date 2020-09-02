@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>HIS系统</title>
+	<link rel="stylesheet" type="text/css" href="./css/registration.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="./js/registration.js" ></script>
+</head>
+<body>
+	<div class="top">
+        <ul>
+        	<li class="li_index"><a>HIS系统</a></li>
+            <li class="li" id="fir">
+            	<a href="#">挂号</a>
+            	<ul class="sec">
+                    <li><a href="#">选择科室</a></li>
+                    <li><a href="#">选择医生</a></li>
+                </ul>
+            </li>
+            <li class="li"><a href="javascript:void(0)" class="lbtn">查看病例</a></li>
+            <li class="li_but"><a href="./Login.html" >注销</a></li>
+        </ul>
+	</div>
+	<div class="reg">
+        <span id="title">挂号</span>
+        <hr>
+        <p id="id">
+            <span>挂号单号:</span>
+        </p>
+        <p id="yh">
+            <span>用户:</span>
+        </p>
+		<p id="ks">
+            <span>选择科室:</span>
+            <select>
+                <option value="内科">内科</option>
+                <option value="外科">外科</option>
+                <option value="精神科">精神科</option>
+            </select>
+        </p>
+        <p id="ys">
+            <span>选择医生:</span>
+            <select>
+                <option value="陈思帆">陈思帆</option>
+                <option value="陈运齐">陈运齐</option>
+                <option value="李胜">李胜</option>
+                <option value="陈帅">陈帅</option>
+            </select>
+        </p>
+        <p id="date">
+            <span>就诊时间:</span>
+            <input type="datetime-local" name="date" value="2019-11-27T00:00">
+        </p>
+        <p id="name">
+            <span>就诊人姓名:</span>
+            <input type="name" name="">
+        </p>
+        <p id="price">
+            <span>总计费用:</span>
+        </p>
+        <div class="log"><a href="javascript:void(0)" id="sbtn">Submit</a></div>
+	</div>
+</body>
+
+<!-- jsonp解决跨域问题 动态script标签 -->
+<script src="./json/registration.json?cb=get_data"></script>
+</html>
